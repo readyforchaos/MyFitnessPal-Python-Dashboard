@@ -5,6 +5,8 @@ The project was simply created during a week for my own benefit but can also be 
 
 ![Screenshot](images/screen.gif)
 
+![Video](images/video.gif)
+
 ## Requirements
 
 Disclaimer: At first, this project was just intended for my own use. Therefore, I didn’t create a new environment to work on this project so that I could easily generate a requirements-file which only had the requirements needed to run this application (I know, bad practice!). In short, I’m unable to package this properly. The current environment I worked on during the project, is commonly used for my Deep Learning GPU intensive work. Therefore, a lot of the requirements that are listed in the requirements.txt-file; are not used in the project. But I will still add the file to the repo. The reason being that when you initially get an error saying that “a library is missing”; you can check the requirements-file and download the specific version that I am using (saving you time). But pay attention that 90% of the packages listed, were NOT used during this project.
