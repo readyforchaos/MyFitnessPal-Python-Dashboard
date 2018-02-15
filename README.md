@@ -3,7 +3,7 @@
 Counting calories can be an effort, but it’s much easier to always stay on track if you have a way to visualize your tracking through a dashboard. This library let’s you do just this directly connected to a Raspberry Pi and a DSI Screen which you can easily hang in your kitchen.
 The project was simply created during a week for my own benefit but can also be extended to whatever you want. MyFitnessPal (MFP) only has a private API which creates an unnecessary barrier between you and your data. This library is built on top of the library from coddingtonbear (https://github.com/coddingtonbear/python-myfitnesspal) which bypasses this barrier.
 
-[DEMO GIF COMING SOON]
+![Screenshot](images/screen.gif)
 
 ## Requirements
 
