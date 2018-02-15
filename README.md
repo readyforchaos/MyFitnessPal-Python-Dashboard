@@ -51,11 +51,15 @@ The file is usually located in the same folder where your environment is located
 
 For me, this was:
 
+```
 C:\Users\angill\AppData\Local\Continuum\anaconda3\envs\deeplearning\Lib\
+```
 
 If you e.g. are using a WinPython environment, then your path would look something like:
 
+```
 C:\Users\angill\Downloads\WinPython-64bit-3.6.3.0Qt5\python-3.6.3.amd64\Lib
+```
 
 Simply open up the “getpass.py” file in an editor like Visual Studio Code, and replace all:
 
@@ -78,18 +82,28 @@ sudo pip install <package-name>
 ```
 If you want to install packages by providing the full path to the file, write these commands:
 
+```
 **1.** wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tar.xz
+
 **2.** tar -xvf Python-3.5.2.tar.xz
+
 **3.** cd Python-3.5.2
+
 **4.** ./configure
+
 **5.** make
+
 **6.** make altinstall
+```
 
 The steps mentioned above had to be performed in the right order on the RPI running Raspbian. 
 Both packages are working versions of the tools:
 
+```
 **1.**	sip-4.19.7.tar.gz
+
 **2.**	PyQt5_gpl-5.10.tar.gz
+```
 
 Both packages are provided in this repo so that you can simply install these on your RPI.
 
@@ -103,8 +117,11 @@ Use SSH when connecting to the Pi to use terminal commands. I use PUTTY in order
 ## Worth mentioning
 
 The package named “lxml” takes a lot of time to install on the RPI. Therefore, to make sure the installation is running after you wrote the correct installation command through the terminal, open a new session and type “top” to see if the system is busy building the lxml package.
+
+```
 PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND
 1645 root 20 0 322224 305740 5384 R 100.0 29.8 3:27.47 /usr/lib/gcc/arm-linux-gnueabihf/5/cc1 -quiet -I /usr/include/libxml2 -I src/lxml/includes -I /usr/include/python2.7 -imultiarch arm-linux-gnueabihf -D_REENTRANT -D ...
+```
 
 ## Changing meal routine
 
@@ -127,13 +144,14 @@ If everything above has been conducted, the last step is to run the .py file in 
 Yes, the code is dirty. Therefore, a lot of shortcuts has been made in order to get to the goal as fast as possible. Feel free to make a better version. I currently don’t have the time to make the coder better at this moment.
 * Crashing kernel when exiting
 * Restart and Exit button fix
-    * Currently the restart app just points to the same file     
+    * Currently the restart app just points to the same file
+    ```
     def restart_click(self):
     Applikasjon.close()
     subprocess.call("%Run calorietracker.py", shell=True)
     or
     subprocess.call("Python calorietracker.py", shell=True)
-
+    ```
 * Everything in one file, no import of self written code
 * A button in the app to overwrite routine selection (shred/clean/bulk)
 * No refresh mechanism configured (I simply re-open the app by clicking the green “play”-button from thonny IDE on the RPI, and it re-launches).
