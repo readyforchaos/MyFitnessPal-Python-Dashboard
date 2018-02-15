@@ -5,7 +5,7 @@ The project was simply created during a week for my own benefit but can also be 
 
 ![Screenshot](images/screen.gif)
 
-![Video](images/video.gif)
+![Video](images/videosmall.gif)
 
 ## Requirements
 
