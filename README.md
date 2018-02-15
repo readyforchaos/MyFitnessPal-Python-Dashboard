@@ -83,26 +83,26 @@ sudo pip install <package-name>
 If you want to install packages by providing the full path to the file, write these commands:
 
 ```
-1. wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tar.xz
+1.  wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tar.xz
 
-2. tar -xvf Python-3.5.2.tar.xz
+2.  tar -xvf Python-3.5.2.tar.xz
 
-3. cd Python-3.5.2
+3.  cd Python-3.5.2
 
-4. ./configure
+4.  ./configure
 
-5. make
+5.  make
 
-6. make altinstall
+6.  make altinstall
 ```
 
 The steps mentioned above had to be performed in the right order on the RPI running Raspbian. 
 Both packages are working versions of the tools:
 
 ```
-1.	sip-4.19.7.tar.gz
+1.  sip-4.19.7.tar.gz
 
-2.	PyQt5_gpl-5.10.tar.gz
+2.  PyQt5_gpl-5.10.tar.gz
 ```
 
 Both packages are provided in this repo so that you can simply install these on your RPI.
