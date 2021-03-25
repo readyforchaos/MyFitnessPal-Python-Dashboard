@@ -142,7 +142,7 @@ pytz==2017.2
 PyWavelets==0.5.2
 pywin32==221
 pywin32-ctypes==0.1.2
-PyYAML==3.12
+PyYAML==5.4
 pyzmq==16.0.2
 qdarkstyle==2.5.1
 QtAwesome==0.4.4
